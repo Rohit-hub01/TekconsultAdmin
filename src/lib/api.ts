@@ -311,7 +311,7 @@ export interface Review {
 
 export const api = {
     login: async (email: string, password: string): Promise<any> => {
-        const response = await fetch(`${API_BASE_URL}/api/Account/admin-login-with-password`, {
+        const response = await fetch(`${API_BASE_URL}/api/Account/login-with-email`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password }),
