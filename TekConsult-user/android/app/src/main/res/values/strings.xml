@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">TekConsult</string>
-    <string name="title_activity_main">TekConsult</string>
-    <string name="package_name">com.tekconsult.app</string>
-    <string name="custom_url_scheme">com.tekconsult.app</string>
-</resources>
