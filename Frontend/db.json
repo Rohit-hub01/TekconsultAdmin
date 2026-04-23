@@ -1,0 +1,1873 @@
+{
+  "consultants": [
+    {
+      "id": "1",
+      "fullName": "Dr. Priya Patel",
+      "email": "priya.patel@example.com",
+      "phone": "+91 98765 43210",
+      "initials": "PP",
+      "isOnline": true,
+      "category": "Health",
+      "status": "Pending",
+      "bio": "Experienced Health consultant with 10+ years in holistic wellness and nutrition.",
+      "expertise": [
+        "Nutrition",
+        "Wellness",
+        "Holistic Health"
+      ],
+      "languages": [
+        "English",
+        "Hindi",
+        "Gujarati"
+      ],
+      "dob": "1985-05-15",
+      "gender": "Female",
+      "rates": {
+        "chatPerMinute": 50,
+        "callPerMinute": 100
+      },
+      "performance": {
+        "totalEarnings": 125000,
+        "totalSessions": 450,
+        "rating": 4.8
+      },
+      "kyc": {
+        "pan": "ABCDE1234F",
+        "address": "123, Lotus Apartment, Mumbai",
+        "documentUrl": "#",
+        "bankName": "HDFC Bank",
+        "branch": "Mumbai Main",
+        "accountNo": "****5678",
+        "ifsc": "HDFC0001234",
+        "aadhaar": "1234 5678 9012"
+      },
+      "appliedDate": "2023-11-12"
+    },
+    {
+      "id": "2",
+      "fullName": "Adv. Vikram Singh",
+      "email": "vikram.legal@example.com",
+      "phone": "+91 91234 56789",
+      "initials": "VS",
+      "isOnline": false,
+      "category": "Legal",
+      "status": "Approved",
+      "bio": "Expert in corporate law and intellectual property rights.",
+      "expertise": [
+        "Corporate Law",
+        "IPR",
+        "Contract Law"
+      ],
+      "languages": [
+        "English",
+        "Hindi",
+        "Punjabi"
+      ],
+      "dob": "1980-08-20",
+      "gender": "Male",
+      "rates": {
+        "chatPerMinute": 80,
+        "callPerMinute": 150
+      },
+      "performance": {
+        "totalEarnings": 210000,
+        "totalSessions": 320,
+        "rating": 4.9
+      },
+      "kyc": {
+        "pan": "FGHIJ5678K",
+        "address": "456, Law Chambers, Delhi",
+        "documentUrl": "#",
+        "bankName": "ICICI Bank",
+        "branch": "Delhi Central",
+        "accountNo": "****1234",
+        "ifsc": "ICIC0005678",
+        "aadhaar": "9876 5432 1098"
+      },
+      "appliedDate": "2023-10-05"
+    },
+    {
+      "id": "3",
+      "fullName": "CA Meena Iyer",
+      "email": "meena.finance@example.com",
+      "phone": "+91 99887 76655",
+      "initials": "MI",
+      "isOnline": true,
+      "category": "Finance",
+      "status": "Approved",
+      "bio": "Chartered Accountant specializing in tax planning and auditing for startups.",
+      "expertise": [
+        "Taxation",
+        "Auditing",
+        "Financial Planning"
+      ],
+      "languages": [
+        "English",
+        "Tamil",
+        "Hindi"
+      ],
+      "rates": {
+        "chatPerMinute": 60,
+        "callPerMinute": 120
+      },
+      "performance": null,
+      "dob": "1988-11-30",
+      "gender": "Female",
+      "kyc": {
+        "pan": "ABCDE1234F",
+        "aadhaar": "4567 8901 2345",
+        "address": "789, Finance Hub, Chennai",
+        "documentUrl": "#",
+        "bankName": "Axis Bank",
+        "branch": "Chennai South",
+        "accountNo": "****5678",
+        "ifsc": "UTIB0001234"
+      },
+      "appliedDate": "2024-01-10"
+    },
+    {
+      "id": "4",
+      "fullName": "Pandit Ramesh Sharma",
+      "email": "ramesh.vedic@example.com",
+      "phone": "+91 94433 22110",
+      "initials": "RS",
+      "isOnline": false,
+      "category": "Vedic",
+      "status": "Approved",
+      "bio": "Scholar of Vedic sciences and astrology with deep ancestral roots in the practice.",
+      "expertise": [
+        "Vedic Astrology",
+        "Numerology",
+        "Palmistry"
+      ],
+      "languages": [
+        "Hindi",
+        "Sanskrit",
+        "English"
+      ],
+      "rates": {
+        "chatPerMinute": 40,
+        "callPerMinute": 80
+      },
+      "performance": {
+        "totalEarnings": 85000,
+        "totalSessions": 210,
+        "rating": 4.7
+      },
+      "kyc": {
+        "pan": "LMNOP9012Q",
+        "address": "789, Heritage Villa, Varanasi",
+        "documentUrl": "#",
+        "bankName": "SBI",
+        "branch": "Varanasi Cantt",
+        "accountNo": "****4321",
+        "ifsc": "SBIN0009876",
+        "aadhaar": "5678 9012 3456"
+      },
+      "appliedDate": "2023-09-20"
+    },
+    {
+      "id": "5",
+      "fullName": "Sanjay Gupta",
+      "email": "sanjay.astro@example.com",
+      "phone": "+91 91122 33445",
+      "initials": "SG",
+      "isOnline": true,
+      "category": "Legal",
+      "status": "Approved",
+      "bio": "Specialist in personality development through astrological guidance.",
+      "expertise": [
+        "Horoscope",
+        "Kundli",
+        "Vastu"
+      ],
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "rates": {
+        "chatPerMinute": 70,
+        "callPerMinute": 130
+      },
+      "performance": null,
+      "kyc": {
+        "pan": "RSTUV3456W",
+        "address": "101, Star Heights, Bangalore",
+        "documentUrl": "#",
+        "bankName": "Axis Bank",
+        "branch": "Bangalore East",
+        "accountNo": "****9012",
+        "ifsc": "UTIB0003456",
+        "aadhaar": "2345 6789 0123"
+      },
+      "appliedDate": "2023-08-15",
+      "suspensionReason": "Policy Violation",
+      "suspensionDuration": "Temporary",
+      "reactivationReason": "All verified"
+    },
+    {
+      "id": "6",
+      "fullName": "Dr. Ananya Reddy",
+      "email": "ananya.health@example.com",
+      "phone": "+91 97766 55443",
+      "initials": "AR",
+      "isOnline": true,
+      "category": "Health",
+      "status": "Approved",
+      "bio": "Focus on mental health and stress management in high-pressure environments.",
+      "expertise": [
+        "Psychology",
+        "Stress Management",
+        "Mental Health"
+      ],
+      "languages": [
+        "English",
+        "Telugu",
+        "Hindi"
+      ],
+      "rates": {
+        "chatPerMinute": 90,
+        "callPerMinute": 180
+      },
+      "performance": {
+        "totalEarnings": 175000,
+        "totalSessions": 280,
+        "rating": 4.6
+      },
+      "kyc": {
+        "pan": "XYZAB7890C",
+        "address": "202, Wellness Lane, Hyderabad",
+        "documentUrl": "#",
+        "bankName": "HDFC Bank",
+        "branch": "Hyderabad Hi-Tech",
+        "accountNo": "****6543",
+        "ifsc": "HDFC0007890",
+        "aadhaar": "6789 0123 4567"
+      },
+      "appliedDate": "2023-12-01"
+    },
+    {
+      "id": "7",
+      "fullName": "Rajesh Khanna",
+      "email": "rajesh.finance@example.com",
+      "phone": "+91 93344 55667",
+      "initials": "RK",
+      "isOnline": false,
+      "category": "Finance",
+      "status": "Pending",
+      "bio": "Investment advisor focusing on mutual funds and portfolio diversification.",
+      "expertise": [
+        "Mutual Funds",
+        "Portfolio Management",
+        "Equity"
+      ],
+      "languages": [
+        "English",
+        "Hindi",
+        "Marathi"
+      ],
+      "rates": {
+        "chatPerMinute": 55,
+        "callPerMinute": 110
+      },
+      "performance": null,
+      "dob": "1992-02-14",
+      "gender": "Male",
+      "kyc": {
+        "pan": "XYZAB1234C",
+        "aadhaar": "3456 7890 1234",
+        "address": "101, Deccan Gymkhana, Pune",
+        "documentUrl": "#",
+        "bankName": "HDFC Bank",
+        "branch": "Pune Deccan",
+        "accountNo": "****9012",
+        "ifsc": "HDFC0003456"
+      },
+      "appliedDate": "2024-01-05"
+    },
+    {
+      "id": "8",
+      "fullName": "Coach Mike",
+      "email": "mike.fitness@example.com",
+      "initials": "MK",
+      "isOnline": true,
+      "category": "Fitness Coaches",
+      "status": "Approved",
+      "bio": "Certified personal trainer specializing in HIIT and weight loss.",
+      "rates": {
+        "chatPerMinute": 30,
+        "callPerMinute": 60
+      },
+      "performance": {
+        "totalEarnings": 45000,
+        "totalSessions": 150,
+        "rating": 4.9
+      },
+      "appliedDate": "2023-11-20"
+    },
+    {
+      "id": "9",
+      "fullName": "Sara Design",
+      "email": "sara.interior@example.com",
+      "initials": "SD",
+      "isOnline": false,
+      "category": "Interior Consultants",
+      "status": "Approved",
+      "bio": "Sustainable interior designer for modern homes.",
+      "rates": {
+        "chatPerMinute": 45,
+        "callPerMinute": 90
+      },
+      "performance": {
+        "totalEarnings": 32000,
+        "totalSessions": 80,
+        "rating": 4.7
+      },
+      "appliedDate": "2023-12-10"
+    },
+    {
+      "id": "10",
+      "fullName": "Amit Founder",
+      "email": "amit.startup@example.com",
+      "initials": "AF",
+      "isOnline": true,
+      "category": "Startup Mentors",
+      "status": "Approved",
+      "bio": "Serial entrepreneur helping startups with GTM strategy.",
+      "rates": {
+        "chatPerMinute": 100,
+        "callPerMinute": 200
+      },
+      "performance": {
+        "totalEarnings": 150000,
+        "totalSessions": 60,
+        "rating": 5
+      },
+      "appliedDate": "2023-10-01"
+    },
+    {
+      "id": "11",
+      "fullName": "Dr. Lisa Mind",
+      "email": "lisa.counsellor@example.com",
+      "initials": "LM",
+      "isOnline": true,
+      "category": "Counsellors",
+      "status": "Approved",
+      "bio": "Clinical psychologist specializing in anxiety and depression.",
+      "rates": {
+        "chatPerMinute": 60,
+        "callPerMinute": 120
+      },
+      "performance": {
+        "totalEarnings": 80000,
+        "totalSessions": 200,
+        "rating": 4.8
+      },
+      "appliedDate": "2023-09-15"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Rahul Sharma",
+      "email": "rahul.sharma@example.com",
+      "phone": "+91 98765 43210",
+      "initials": "RS",
+      "location": {
+        "city": "Mumbai",
+        "state": "Maharashtra"
+      },
+      "walletBalance": 2450,
+      "totalSessions": 45,
+      "totalSpend": 12500,
+      "status": "Active",
+      "joinedDate": "2024-01-05"
+    },
+    {
+      "id": "2",
+      "fullName": "Anita Desai",
+      "email": "anita.desai@example.com",
+      "phone": "+91 98765 43211",
+      "initials": "AD",
+      "location": {
+        "city": "Delhi",
+        "state": "NCR"
+      },
+      "walletBalance": 890,
+      "totalSessions": 23,
+      "totalSpend": 8900,
+      "status": "Active",
+      "joinedDate": "2024-01-10"
+    },
+    {
+      "id": "3",
+      "fullName": "Suresh Kumar",
+      "email": "suresh.kumar@example.com",
+      "phone": "+91 98765 43212",
+      "initials": "SK",
+      "location": {
+        "city": "Bangalore",
+        "state": "Karnataka"
+      },
+      "walletBalance": 120,
+      "totalSessions": 67,
+      "totalSpend": 34500,
+      "status": "Active",
+      "joinedDate": "2023-12-15"
+    },
+    {
+      "id": "4",
+      "fullName": "Priya Verma",
+      "email": "priya.verma@example.com",
+      "phone": "+91 98765 00001",
+      "initials": "PV",
+      "location": {
+        "city": "Hyderabad",
+        "state": "Telangana"
+      },
+      "walletBalance": 5600,
+      "totalSessions": 12,
+      "totalSpend": 6000,
+      "status": "Active",
+      "joinedDate": "2024-01-12"
+    },
+    {
+      "id": "5",
+      "fullName": "Arjun Singh",
+      "email": "arjun.singh@example.com",
+      "phone": "+91 98765 00002",
+      "initials": "AS",
+      "location": {
+        "city": "Chandigarh",
+        "state": "Punjab"
+      },
+      "walletBalance": 45,
+      "totalSessions": 98,
+      "totalSpend": 52000,
+      "status": "Blocked",
+      "joinedDate": "2023-11-20"
+    },
+    {
+      "id": "6",
+      "fullName": "Megha Gupta",
+      "email": "megha.g@example.com",
+      "phone": "+91 98765 00003",
+      "initials": "MG",
+      "location": {
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "walletBalance": 1250,
+      "totalSessions": 5,
+      "totalSpend": 1500,
+      "status": "Active",
+      "joinedDate": "2024-01-18"
+    },
+    {
+      "id": "7",
+      "fullName": "Vikram Rathore",
+      "email": "vikram.r@example.com",
+      "phone": "+91 98765 00004",
+      "initials": "VR",
+      "location": {
+        "city": "Jaipur",
+        "state": "Rajasthan"
+      },
+      "walletBalance": 300,
+      "totalSessions": 42,
+      "totalSpend": 18000,
+      "status": "Active",
+      "joinedDate": "2023-10-15"
+    },
+    {
+      "id": "8",
+      "fullName": "Sneha Reddy",
+      "email": "sneha.reddy@example.com",
+      "phone": "+91 98765 00005",
+      "initials": "SR",
+      "location": {
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+      },
+      "walletBalance": 8500,
+      "totalSessions": 156,
+      "totalSpend": 125000,
+      "status": "Active",
+      "joinedDate": "2023-08-01"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Lawyers",
+      "description": "Legal advice, documentation, criminal & civil law",
+      "consultantCount": 156,
+      "subcategories": [
+        "Civil Law",
+        "Criminal Law",
+        "Corporate & Business Law",
+        "Family Law ( Divorce, Custody )",
+        "Property & Real Estate Law",
+        "Intellectual Property ( IP )",
+        "Employement & Labor Law",
+        "Tax Law",
+        "Immigration Law",
+        "Consumer Protection",
+        "Contract Drafting & Review",
+        "Legal Compliance & Documentation"
+      ],
+      "status": "Active",
+      "icon": "FolderTree"
+    },
+    {
+      "id": "2",
+      "name": "Digital Marketers",
+      "description": "SEO, social media strategy, ads & content marketing",
+      "consultantCount": 234,
+      "subcategories": [
+        "SEO Optimization",
+        "Social Media",
+        "PPC Campaigns",
+        "Content Strategy",
+        "Email Marketing"
+      ],
+      "status": "Active",
+      "icon": "FolderTree"
+    },
+    {
+      "id": "3",
+      "name": "Interior Consultants",
+      "description": "Home styling, office planning, renovation advice",
+      "consultantCount": 89,
+      "subcategories": [
+        "Home Staging",
+        "Office Design",
+        "Renovation Planning",
+        "Color Theory",
+        "Sustainable Design"
+      ],
+      "status": "Active",
+      "icon": "FolderTree"
+    },
+    {
+      "id": "4",
+      "name": "Health Consultants",
+      "description": "General health advice, medical guidance, second opinions",
+      "consultantCount": 145,
+      "subcategories": [
+        "General Medicine",
+        "Pediatrics",
+        "Dermatology",
+        "Womens Health",
+        "Holistic Health"
+      ],
+      "status": "Active",
+      "icon": "FolderTree"
+    },
+    {
+      "id": "5",
+      "name": "Fitness Coaches",
+      "description": "Personal training, yoga, diet & workout plans",
+      "consultantCount": 112,
+      "subcategories": [
+        "Personal Training",
+        "Yoga & Pilates",
+        "Weight Loss",
+        "Strength Training",
+        "Sports Nutrition"
+      ],
+      "status": "Active",
+      "icon": "FolderTree"
+    },
+    {
+      "id": "6",
+      "name": "Startup Mentors",
+      "description": "Business strategy, fundraising, scaling consultations",
+      "consultantCount": 67,
+      "subcategories": [
+        "Business Strategy",
+        "Fundraising",
+        "Product Management",
+        "Go-to-Market",
+        "Leadership"
+      ],
+      "status": "Active",
+      "icon": "FolderTree"
+    },
+    {
+      "id": "7",
+      "name": "Counsellors",
+      "description": "Mental health support, career counseling, life coaching",
+      "consultantCount": 198,
+      "subcategories": [
+        "Psychotherapy",
+        "Career Counseling",
+        "Relationship Advice",
+        "Grief Counseling",
+        "Life Coaching"
+      ],
+      "status": "Active",
+      "icon": "FolderTree"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "SES-001234",
+      "user": {
+        "name": "Rahul Sharma",
+        "phone": "+91 98765 43210"
+      },
+      "consultant": {
+        "name": "Dr. Priya Patel",
+        "category": "Astrology"
+      },
+      "consultantId": "1",
+      "mode": "chat",
+      "startTime": "14:32:15",
+      "duration": "12:45",
+      "rate": 25,
+      "billed": 318.75,
+      "walletBalance": 450,
+      "status": "active"
+    },
+    {
+      "id": "SES-001235",
+      "user": {
+        "name": "Anita Desai",
+        "phone": "+91 98765 43211"
+      },
+      "consultant": {
+        "name": "Adv. Vikram Singh",
+        "category": "Legal"
+      },
+      "consultantId": "2",
+      "mode": "call",
+      "startTime": "14:36:48",
+      "duration": "08:32",
+      "rate": 40,
+      "billed": 341.33,
+      "walletBalance": 890,
+      "status": "active"
+    },
+    {
+      "id": "SES-001236",
+      "user": {
+        "name": "Suresh Kumar",
+        "phone": "+91 98765 43212"
+      },
+      "consultant": {
+        "name": "CA Meena Iyer",
+        "category": "Finance"
+      },
+      "consultantId": "3",
+      "mode": "chat",
+      "startTime": "14:22:00",
+      "duration": "23:15",
+      "rate": 30,
+      "billed": 697.5,
+      "walletBalance": 120,
+      "status": "low_balance"
+    },
+    {
+      "id": "SES-001237",
+      "user": {
+        "name": "Deepika Reddy",
+        "phone": "+91 98765 43213"
+      },
+      "consultant": {
+        "name": "Pandit Ramesh",
+        "category": "Vedic"
+      },
+      "consultantId": "4",
+      "mode": "call",
+      "startTime": "14:39:32",
+      "duration": "05:48",
+      "rate": 35,
+      "billed": 203,
+      "walletBalance": 1200,
+      "status": "active"
+    },
+    {
+      "id": "SES-001238",
+      "user": {
+        "name": "Ajay Malhotra",
+        "phone": "+91 98765 43214"
+      },
+      "consultant": {
+        "name": "Dr. Sunita Roy",
+        "category": "Health"
+      },
+      "consultantId": "5",
+      "mode": "chat",
+      "startTime": "14:29:58",
+      "duration": "15:22",
+      "rate": 20,
+      "billed": 307.33,
+      "walletBalance": 340,
+      "status": "active"
+    },
+    {
+      "id": "SES-001239",
+      "user": {
+        "name": "Sunita Gupta",
+        "phone": "+91 98765 43215"
+      },
+      "consultant": {
+        "name": "Pandit Ravi",
+        "category": "Astrology"
+      },
+      "consultantId": "4",
+      "mode": "chat",
+      "startTime": "14:45:00",
+      "duration": "04:30",
+      "rate": 25,
+      "billed": 112.5,
+      "walletBalance": 140,
+      "status": "low_balance"
+    },
+    {
+      "id": "SES-001240",
+      "user": {
+        "name": "Vikram Mehta",
+        "phone": "+91 98765 43216"
+      },
+      "consultant": {
+        "name": "Adv. Sneha Roy",
+        "category": "Legal"
+      },
+      "consultantId": "2",
+      "mode": "call",
+      "startTime": "14:50:00",
+      "duration": "10:15",
+      "rate": 45,
+      "billed": 461.25,
+      "walletBalance": 2500,
+      "status": "active"
+    },
+    {
+      "id": "SES-001241",
+      "user": {
+        "name": "Priyanka Chopra",
+        "phone": "+91 98765 43217"
+      },
+      "consultant": {
+        "name": "CA Rohan Sharma",
+        "category": "Finance"
+      },
+      "mode": "chat",
+      "startTime": "14:55:00",
+      "duration": "18:20",
+      "rate": 50,
+      "billed": 916.67,
+      "walletBalance": 300,
+      "status": "active"
+    },
+    {
+      "id": "SES-001242",
+      "user": {
+        "name": "Karan Johar",
+        "phone": "+91 98765 43218"
+      },
+      "consultant": {
+        "name": "Dr. Amit Verma",
+        "category": "Health"
+      },
+      "mode": "call",
+      "startTime": "15:00:00",
+      "duration": "07:45",
+      "rate": 30,
+      "billed": 232.5,
+      "walletBalance": 100,
+      "status": "low_balance"
+    },
+    {
+      "id": "SES-001243",
+      "user": {
+        "name": "Alia Bhatt",
+        "phone": "+91 98765 43219"
+      },
+      "consultant": {
+        "name": "Pandit Manoj",
+        "category": "Vedic"
+      },
+      "mode": "chat",
+      "startTime": "15:05:00",
+      "duration": "12:10",
+      "rate": 40,
+      "billed": 486.67,
+      "walletBalance": 800,
+      "status": "active"
+    },
+    {
+      "id": "SES-001244",
+      "user": {
+        "name": "Gym Rat",
+        "phone": "123"
+      },
+      "consultant": {
+        "name": "Coach Mike",
+        "category": "Fitness Coaches"
+      },
+      "consultantId": "8",
+      "mode": "video",
+      "startTime": "10:00:00",
+      "duration": "45:00",
+      "rate": 60,
+      "billed": 2700,
+      "walletBalance": 500,
+      "status": "completed"
+    },
+    {
+      "id": "SES-001245",
+      "user": {
+        "name": "Home Owner",
+        "phone": "456"
+      },
+      "consultant": {
+        "name": "Sara Design",
+        "category": "Interior Consultants"
+      },
+      "consultantId": "9",
+      "mode": "call",
+      "startTime": "11:30:00",
+      "duration": "20:00",
+      "rate": 90,
+      "billed": 1800,
+      "walletBalance": 200,
+      "status": "active"
+    },
+    {
+      "id": "SES-001246",
+      "user": {
+        "name": "Tech Founder",
+        "phone": "789"
+      },
+      "consultant": {
+        "name": "Amit Founder",
+        "category": "Startup Mentors"
+      },
+      "consultantId": "10",
+      "mode": "video",
+      "startTime": "14:00:00",
+      "duration": "60:00",
+      "rate": 200,
+      "billed": 12000,
+      "walletBalance": 5000,
+      "status": "active"
+    },
+    {
+      "id": "SES-001247",
+      "user": {
+        "name": "Anxious User",
+        "phone": "000"
+      },
+      "consultant": {
+        "name": "Dr. Lisa Mind",
+        "category": "Counsellors"
+      },
+      "consultantId": "11",
+      "mode": "chat",
+      "startTime": "09:00:00",
+      "duration": "30:00",
+      "rate": 60,
+      "billed": 1800,
+      "walletBalance": 100,
+      "status": "completed"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TXN-001",
+      "user": "Rahul Sharma",
+      "type": "credit",
+      "amount": 500,
+      "method": "UPI",
+      "status": "success",
+      "date": "2024-01-15 14:32"
+    },
+    {
+      "id": "TXN-002",
+      "user": "Anita Desai",
+      "type": "debit",
+      "amount": 125,
+      "method": "Session",
+      "status": "success",
+      "date": "2024-01-15 14:30"
+    },
+    {
+      "id": "TXN-003",
+      "user": "Suresh Kumar",
+      "type": "credit",
+      "amount": 1000,
+      "method": "Card",
+      "status": "failed",
+      "date": "2024-01-15 14:28"
+    },
+    {
+      "id": "TXN-004",
+      "user": "Deepika Reddy",
+      "type": "refund",
+      "amount": 250,
+      "method": "Dispute",
+      "status": "success",
+      "date": "2024-01-15 14:25"
+    },
+    {
+      "id": "TXN-005",
+      "user": "Ajay Malhotra",
+      "type": "credit",
+      "amount": 2000,
+      "method": "UPI",
+      "status": "success",
+      "date": "2024-01-15 14:20"
+    },
+    {
+      "id": "ERN-001",
+      "consultant": "Dr. Priya Patel",
+      "session": "SES-001234",
+      "gross": 318.75,
+      "commission": 63.75,
+      "net": 255,
+      "status": "credited",
+      "date": "2024-01-15 14:32",
+      "type": "credit",
+      "amount": 255
+    },
+    {
+      "id": "ERN-002",
+      "consultant": "Adv. Vikram Singh",
+      "session": "SES-001235",
+      "gross": 341.33,
+      "commission": 68.27,
+      "net": 273.06,
+      "status": "pending",
+      "date": "2024-01-15 14:30",
+      "type": "credit",
+      "amount": 273.06
+    },
+    {
+      "id": "ERN-003",
+      "consultant": "CA Meena Iyer",
+      "session": "SES-001236",
+      "gross": 697.5,
+      "commission": 139.5,
+      "net": 558,
+      "status": "credited",
+      "date": "2024-01-15 14:28",
+      "type": "credit",
+      "amount": 558
+    },
+    {
+      "id": "ERN-004",
+      "consultant": "Pandit Ramesh",
+      "session": "SES-001237",
+      "gross": 203,
+      "commission": 40.6,
+      "net": 162.4,
+      "status": "pending",
+      "date": "2024-01-15 14:25",
+      "type": "credit",
+      "amount": 162.4
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "WTH-001",
+      "consultant": "Dr. Priya Patel",
+      "requestedAmount": 15000,
+      "availableBalance": 18500,
+      "bankDetails": "HDFC ****1234",
+      "status": "approved",
+      "requestedDate": "2024-01-15 10:30"
+    },
+    {
+      "id": "WTH-002",
+      "consultant": "Adv. Vikram Singh",
+      "requestedAmount": 25000,
+      "availableBalance": 32000,
+      "bankDetails": "ICICI ****5678",
+      "status": "approved",
+      "requestedDate": "2024-01-14 15:45"
+    },
+    {
+      "id": "WTH-003",
+      "consultant": "CA Meena Iyer",
+      "requestedAmount": 12000,
+      "availableBalance": 12000,
+      "bankDetails": "SBI ****9012",
+      "status": "paid",
+      "payoutRef": "UTR789456123",
+      "requestedDate": "2024-01-13 09:20"
+    },
+    {
+      "id": "WTH-004",
+      "consultant": "Pandit Ramesh",
+      "requestedAmount": 8000,
+      "availableBalance": 9500,
+      "bankDetails": "Axis ****3456",
+      "status": "paid",
+      "failureReason": "Invalid bank details",
+      "requestedDate": "2024-01-12 14:10"
+    },
+    {
+      "id": "WTH-005",
+      "consultant": "Dr. Sunita Roy",
+      "requestedAmount": 20000,
+      "availableBalance": 28000,
+      "bankDetails": "Kotak ****7890",
+      "status": "requested",
+      "requestedDate": "2024-01-15 11:00"
+    },
+    {
+      "id": "WTH-006",
+      "consultant": "Dr. Sunita Roy",
+      "requestedAmount": 5600,
+      "availableBalance": 8200,
+      "bankDetails": "AXIS ****7890",
+      "status": "paid",
+      "requestedDate": "2024-01-10 09:15",
+      "processedBy": "Admin Rahul"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "REV-001",
+      "consultantId": "1",
+      "user": "Rahul S.",
+      "rating": 5,
+      "comment": "Very helpful and knowledgeable! Dr. Priya understood my concerns immediately.",
+      "date": "2024-01-10",
+      "sessionId": "SES-001234"
+    },
+    {
+      "id": "REV-002",
+      "consultantId": "1",
+      "user": "Anita D.",
+      "rating": 4,
+      "comment": "Good advice but audio was a bit laggy. The content of the session was excellent though.",
+      "date": "2024-01-12",
+      "sessionId": "SES-001235"
+    },
+    {
+      "id": "REV-003",
+      "consultantId": "2",
+      "user": "Vikram K.",
+      "rating": 5,
+      "comment": "Excellent legal counsel, saved me a lot of trouble. Highly recommended for property disputes.",
+      "date": "2024-01-15",
+      "sessionId": "SES-001236"
+    },
+    {
+      "id": "REV-004",
+      "consultantId": "2",
+      "user": "Sneha M.",
+      "rating": 3,
+      "comment": "Knowledgeable but felt a bit rushed towards the end of the call.",
+      "date": "2024-01-18",
+      "sessionId": "SES-001237"
+    },
+    {
+      "id": "REV-005",
+      "consultantId": "3",
+      "user": "Amit R.",
+      "rating": 5,
+      "comment": "CA Meena is fantastic! She cleared all my doubts regarding GST filing in 15 minutes.",
+      "date": "2024-01-05",
+      "sessionId": "SES-001238"
+    },
+    {
+      "id": "REV-006",
+      "consultantId": "3",
+      "user": "Priya L.",
+      "rating": 4,
+      "comment": "Very detailed explanation. Will definitely book another session for tax planning.",
+      "date": "2024-01-08"
+    },
+    {
+      "id": "REV-007",
+      "consultantId": "3",
+      "user": "Karan T.",
+      "rating": 5,
+      "comment": "Saved me thousands in potential penalties. Worth every rupee.",
+      "date": "2024-01-14"
+    },
+    {
+      "id": "REV-008",
+      "consultantId": "4",
+      "user": "Deepika S.",
+      "rating": 5,
+      "comment": "Pandit Ramesh's predictions were spot on. I felt very much at peace after talking to him.",
+      "date": "2024-01-02",
+      "sessionId": "SES-001239"
+    },
+    {
+      "id": "REV-009",
+      "consultantId": "4",
+      "user": "Rohan G.",
+      "rating": 4,
+      "comment": "Good insights into Vedic astrology. Helped me choose an auspicious date for my venture.",
+      "date": "2024-01-09",
+      "sessionId": "SES-001240"
+    },
+    {
+      "id": "REV-010",
+      "consultantId": "5",
+      "user": "Sanjay V.",
+      "rating": 2,
+      "comment": "Was not satisfied with the remedies provided. Felt generic.",
+      "date": "2023-12-25",
+      "sessionId": "SES-001241"
+    },
+    {
+      "id": "REV-011",
+      "consultantId": "6",
+      "user": "Neha B.",
+      "rating": 5,
+      "comment": "Dr. Ananya is a lifesaver. Her therapy sessions have helped me manage my anxiety effectively.",
+      "date": "2024-01-11",
+      "sessionId": "SES-001242"
+    },
+    {
+      "id": "REV-012",
+      "consultantId": "6",
+      "user": "Rajeev M.",
+      "rating": 5,
+      "comment": "Very empathetic and professional listener. Highly recommend for stress management.",
+      "date": "2024-01-13",
+      "sessionId": "SES-001243"
+    },
+    {
+      "id": "REV-013",
+      "consultantId": "6",
+      "user": "Simran K.",
+      "rating": 4,
+      "comment": "Great session, though scheduling was a bit difficult initially.",
+      "date": "2024-01-16",
+      "sessionId": "SES-001244"
+    },
+    {
+      "id": "REV-014",
+      "consultantId": "7",
+      "user": "Ankit P.",
+      "rating": 3,
+      "comment": "Average experience. The advice was standard, nothing I couldn't find online.",
+      "date": "2023-12-30",
+      "sessionId": "SES-001245"
+    },
+    {
+      "id": "REV-015",
+      "consultantId": "1",
+      "user": "Meera W.",
+      "rating": 5,
+      "comment": "My go-to astrologer. Always provides clarity and direction.",
+      "date": "2024-01-19",
+      "sessionId": "SES-001246"
+    }
+  ],
+  "disputes": [
+    {
+      "id": "DIS-20835",
+      "session": "SES-5 654",
+      "user": "Rahul Sharma",
+      "userId": "USR-8593",
+      "userEmail": "user@example.com",
+      "consultant": "Dr. Priya Patel",
+      "consultantId": "#150",
+      "consultantEmail": "dr..priya patel@example.com",
+      "category": "Billing Issue",
+      "amount": 450,
+      "status": "open",
+      "priority": "high",
+      "createdDate": "2026-01-15 10:30",
+      "description": "User reported poor service quality during the consultation session. The consultant allegedly ended the call abruptly without proper resolution and charged full amount. User is requesting a full refund of ₹450.",
+      "sessionDate": "2024-01-10 14:30",
+      "sessionDuration": "32 minutes",
+      "evidence": [
+        "Screenshot_001.png",
+        "Call_Log_Details.pdf"
+      ],
+      "timeline": [
+        {
+          "title": "Dispute Opened",
+          "desc": "User submitted complaint via mobile app",
+          "time": "2026-01-15 10:30",
+          "active": true
+        },
+        {
+          "title": "Under Review",
+          "desc": "Admin team reviewing the case",
+          "time": "2 hours ago",
+          "active": true
+        },
+        {
+          "title": "Awaiting Resolution",
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "DSP-002",
+      "session": "SES-001189",
+      "user": "Anita Desai",
+      "userId": "USR-2024",
+      "userEmail": "anita.desai@example.com",
+      "consultant": "Adv. Vikram Singh",
+      "consultantId": "C-102",
+      "consultantEmail": "vikram.legal@example.com",
+      "category": "Service Quality",
+      "amount": 890,
+      "status": "in_review",
+      "priority": "medium",
+      "createdDate": "2024-01-14 15:45",
+      "description": "Consultant was unresponsive during the session and didn't provide any legal advice as promised.",
+      "sessionDate": "2024-01-14 14:00",
+      "sessionDuration": "15 minutes",
+      "evidence": [
+        "Session_Audio.mp3"
+      ],
+      "timeline": [
+        {
+          "title": "Dispute Opened",
+          "time": "2024-01-14 15:45",
+          "active": true
+        },
+        {
+          "title": "Assigned to Admin",
+          "time": "2024-01-14 16:30",
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "DSP-003",
+      "session": "SES-001156",
+      "user": "Suresh Kumar",
+      "userId": "USR-3056",
+      "userEmail": "suresh.kumar@example.com",
+      "consultant": "CA Meena Iyer",
+      "consultantId": "C-205",
+      "consultantEmail": "meena.finance@example.com",
+      "category": "Technical Issue",
+      "amount": 320,
+      "status": "resolved",
+      "priority": "low",
+      "createdDate": "2024-01-13 09:20",
+      "description": "Audio quality was poor throughout the call making it impossible to understand the tax advice.",
+      "resolution": "Partial refund of ₹160 issued",
+      "sessionDate": "2024-01-12 11:00",
+      "sessionDuration": "20 minutes",
+      "timeline": [
+        {
+          "title": "Dispute Resolved",
+          "desc": "Refund processed",
+          "time": "2024-01-15 12:00",
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "DSP-004",
+      "session": "SES-001098",
+      "user": "Deepika Reddy",
+      "consultant": "Pandit Ramesh",
+      "category": "Billing Issue",
+      "amount": 1200,
+      "status": "open",
+      "priority": "high",
+      "createdDate": "2024-01-15 11:00",
+      "description": "Double charged for the same session"
+    },
+    {
+      "id": "DSP-005",
+      "session": "SES-001045",
+      "user": "Ajay Malhotra",
+      "consultant": "Dr. Sunita Roy",
+      "category": "Refund Request",
+      "amount": 560,
+      "status": "rejected",
+      "priority": "low",
+      "createdDate": "2024-01-12 14:10",
+      "description": "User requested refund after completing session"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOT-001",
+      "title": "New Year Offer!",
+      "message": "Get 20% extra on your first recharge of 2024",
+      "audience": "all_users",
+      "type": "promotional",
+      "status": "sent",
+      "sentDate": "2024-01-01 00:00",
+      "delivered": 24567,
+      "opened": 18234
+    },
+    {
+      "id": "NOT-002",
+      "title": "Payout Processed",
+      "message": "Your withdrawal of ₹15,000 has been processed",
+      "audience": "consultants",
+      "type": "transactional",
+      "status": "sent",
+      "sentDate": "2024-01-15 10:30",
+      "delivered": 1,
+      "opened": 1
+    },
+    {
+      "id": "NOT-003",
+      "title": "Republic Day Special",
+      "message": "Celebrate with 26% off on all consultations",
+      "audience": "all_users",
+      "type": "promotional",
+      "status": "scheduled",
+      "scheduledDate": "2024-01-26 08:00",
+      "delivered": 0,
+      "opened": 0
+    },
+    {
+      "id": "NOT-004",
+      "title": "Profile Verification Required",
+      "message": "Please complete your KYC to continue receiving consultations",
+      "audience": "consultants",
+      "type": "system",
+      "status": "sent",
+      "sentDate": "2024-01-14 12:00",
+      "delivered": 45,
+      "opened": 32
+    }
+  ],
+  "templates": [
+    {
+      "id": "1",
+      "name": "Welcome Message",
+      "type": "email",
+      "subject": "Welcome to TekConsult - Let's get started!",
+      "content": "Hello {{name}},\n\nWelcome to TekConsult! We're thrilled to have you join our platform. You can now start booking consultations with top experts.\n\nBest regards,\nTekConsult Team",
+      "lastUsed": "2024-01-10",
+      "totalSends": 1245
+    },
+    {
+      "id": "2",
+      "name": "Payment Confirmation",
+      "type": "email",
+      "subject": "Payment Received: Session #{{id}}",
+      "content": "Hi {{name}},\n\nWe've successfully received your payment for the session on {{date}}. You can find the invoice attached to this email.\n\nThank you for choosing TekConsult!",
+      "lastUsed": "2024-01-15",
+      "totalSends": 856
+    },
+    {
+      "id": "3",
+      "name": "Promotional Offer",
+      "type": "promotional",
+      "subject": "Special Offer Just for You!",
+      "content": "Hey {{name}},\n\nUse code NEWYEAR24 to get 20% off on your next consultation. Valid until Jan 31st.\n\nDon't miss out!",
+      "lastUsed": "2024-01-01",
+      "totalSends": 5432
+    },
+    {
+      "id": "4",
+      "name": "Session Reminder",
+      "type": "email",
+      "subject": "Reminder: Upcoming Consultation",
+      "content": "Hello {{name}},\n\nThis is a friendly reminder for your upcoming consultation today. Please make sure you have a stable internet connection.\n\nSee you soon!",
+      "lastUsed": "2024-01-14",
+      "totalSends": 2100
+    }
+  ],
+  "analytics": [
+    {
+      "id": "last30",
+      "summary": {
+        "totalGmv": 12400000,
+        "platformRevenue": 2480000,
+        "totalSessions": 45678,
+        "newUsersMonth": 2345
+      },
+      "revenueTrend": [
+        {
+          "month": "Jul",
+          "gmv": 8500000,
+          "revenue": 1700000
+        },
+        {
+          "month": "Aug",
+          "gmv": 9200000,
+          "revenue": 1840000
+        },
+        {
+          "month": "Sep",
+          "gmv": 10100000,
+          "revenue": 2020000
+        },
+        {
+          "month": "Oct",
+          "gmv": 11500000,
+          "revenue": 2300000
+        },
+        {
+          "month": "Nov",
+          "gmv": 12800000,
+          "revenue": 2560000
+        },
+        {
+          "month": "Dec",
+          "gmv": 14200000,
+          "revenue": 2840000
+        },
+        {
+          "month": "Jan",
+          "gmv": 12400000,
+          "revenue": 2480000
+        }
+      ],
+      "categoryDistribution": [
+        {
+          "name": "Astrology",
+          "value": 35,
+          "color": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Legal",
+          "value": 25,
+          "color": "hsl(var(--chart-2))"
+        },
+        {
+          "name": "Finance",
+          "value": 20,
+          "color": "hsl(var(--chart-3))"
+        },
+        {
+          "name": "Health",
+          "value": 12,
+          "color": "hsl(var(--chart-4))"
+        },
+        {
+          "name": "Others",
+          "value": 8,
+          "color": "hsl(var(--chart-5))"
+        }
+      ],
+      "userGrowth": [
+        {
+          "month": "Jul",
+          "users": 18500,
+          "consultants": 890
+        },
+        {
+          "month": "Aug",
+          "users": 19800,
+          "consultants": 945
+        },
+        {
+          "month": "Sep",
+          "users": 21200,
+          "consultants": 1020
+        },
+        {
+          "month": "Oct",
+          "users": 22100,
+          "consultants": 1080
+        },
+        {
+          "month": "Nov",
+          "users": 23400,
+          "consultants": 1150
+        },
+        {
+          "month": "Dec",
+          "users": 24100,
+          "consultants": 1200
+        },
+        {
+          "month": "Jan",
+          "users": 24567,
+          "consultants": 1234
+        }
+      ]
+    },
+    {
+      "id": "last7",
+      "summary": {
+        "totalGmv": 3100000,
+        "platformRevenue": 620000,
+        "totalSessions": 11420,
+        "newUsersMonth": 586
+      },
+      "revenueTrend": [
+        {
+          "month": "Mon",
+          "gmv": 450000,
+          "revenue": 90000
+        },
+        {
+          "month": "Tue",
+          "gmv": 420000,
+          "revenue": 84000
+        },
+        {
+          "month": "Wed",
+          "gmv": 480000,
+          "revenue": 96000
+        },
+        {
+          "month": "Thu",
+          "gmv": 510000,
+          "revenue": 102000
+        },
+        {
+          "month": "Fri",
+          "gmv": 440000,
+          "revenue": 88000
+        },
+        {
+          "month": "Sat",
+          "gmv": 410000,
+          "revenue": 82000
+        },
+        {
+          "month": "Sun",
+          "gmv": 390000,
+          "revenue": 78000
+        }
+      ],
+      "categoryDistribution": [
+        {
+          "name": "Astrology",
+          "value": 38,
+          "color": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Legal",
+          "value": 22,
+          "color": "hsl(var(--chart-2))"
+        },
+        {
+          "name": "Finance",
+          "value": 18,
+          "color": "hsl(var(--chart-3))"
+        },
+        {
+          "name": "Health",
+          "value": 14,
+          "color": "hsl(var(--chart-4))"
+        },
+        {
+          "name": "Others",
+          "value": 8,
+          "color": "hsl(var(--chart-5))"
+        }
+      ],
+      "userGrowth": [
+        {
+          "month": "Mon",
+          "users": 120,
+          "consultants": 5
+        },
+        {
+          "month": "Tue",
+          "users": 95,
+          "consultants": 3
+        },
+        {
+          "month": "Wed",
+          "users": 110,
+          "consultants": 4
+        },
+        {
+          "month": "Thu",
+          "users": 140,
+          "consultants": 6
+        },
+        {
+          "month": "Fri",
+          "users": 130,
+          "consultants": 5
+        },
+        {
+          "month": "Sat",
+          "users": 150,
+          "consultants": 7
+        },
+        {
+          "month": "Sun",
+          "users": 160,
+          "consultants": 8
+        }
+      ]
+    },
+    {
+      "id": "last90",
+      "summary": {
+        "totalGmv": 38500000,
+        "platformRevenue": 7700000,
+        "totalSessions": 132450,
+        "newUsersMonth": 8600
+      },
+      "revenueTrend": [
+        {
+          "month": "Oct",
+          "gmv": 11500000,
+          "revenue": 2300000
+        },
+        {
+          "month": "Nov",
+          "gmv": 12800000,
+          "revenue": 2560000
+        },
+        {
+          "month": "Dec",
+          "gmv": 14200000,
+          "revenue": 2840000
+        }
+      ],
+      "categoryDistribution": [
+        {
+          "name": "Astrology",
+          "value": 34,
+          "color": "hsl(var(--chart-1))"
+        },
+        {
+          "name": "Legal",
+          "value": 26,
+          "color": "hsl(var(--chart-2))"
+        },
+        {
+          "name": "Finance",
+          "value": 21,
+          "color": "hsl(var(--chart-3))"
+        },
+        {
+          "name": "Health",
+          "value": 11,
+          "color": "hsl(var(--chart-4))"
+        },
+        {
+          "name": "Others",
+          "value": 8,
+          "color": "hsl(var(--chart-5))"
+        }
+      ],
+      "userGrowth": [
+        {
+          "month": "Oct",
+          "users": 22100,
+          "consultants": 1080
+        },
+        {
+          "month": "Nov",
+          "users": 23400,
+          "consultants": 1150
+        },
+        {
+          "month": "Dec",
+          "users": 24100,
+          "consultants": 1200
+        }
+      ]
+    }
+  ],
+  "chatLogs": [
+    {
+      "id": "SES-5 654",
+      "sessionTime": "07:47 - 09:52",
+      "duration": "32 minutes",
+      "userName": "Rahul Sharma",
+      "consultantName": "Dr. Priya Patel",
+      "messages": [
+        {
+          "sender": "user",
+          "text": "Hello, I need consultation regarding my career path.",
+          "time": "14:30"
+        },
+        {
+          "sender": "consultant",
+          "text": "Hello! I'd be happy to help you. Could you please share more details about your current situation?",
+          "time": "14:31"
+        },
+        {
+          "sender": "user",
+          "text": "I am currently working in IT but considering a career change. I feel stuck and need guidance.",
+          "time": "14:32"
+        },
+        {
+          "sender": "consultant",
+          "text": "I understand. What areas are you interested in exploring?",
+          "time": "14:33"
+        },
+        {
+          "sender": "user",
+          "text": "I'm interested in digital marketing and content creation. Do you think it's a good move?",
+          "time": "14:35"
+        },
+        {
+          "sender": "consultant",
+          "text": "Both are growing fields. However, I need to check something. Give me a moment.",
+          "time": "14:36"
+        },
+        {
+          "sender": "user",
+          "text": "Consultant ended the session • 14:38",
+          "time": "14:38",
+          "color": "system"
+        },
+        {
+          "sender": "user",
+          "text": "Hello? Are you there?",
+          "time": "14:39"
+        },
+        {
+          "sender": "user",
+          "text": "The session ended abruptly. I didn't get proper guidance.",
+          "time": "14:40"
+        }
+      ],
+      "startTimeFormatted": "14:30 IST",
+      "endTimeFormatted": "15:02 IST",
+      "timezone": "IST"
+    },
+    {
+      "id": "SES-001189",
+      "sessionTime": "14:00 - 14:15",
+      "duration": "15 minutes",
+      "userName": "Anita Desai",
+      "consultantName": "Adv. Vikram Singh",
+      "messages": [
+        {
+          "sender": "user",
+          "text": "Hello, I need legal advice on a property matter.",
+          "time": "14:00"
+        },
+        {
+          "sender": "consultant",
+          "text": "Certainly, Anita. Please describe the nature of the dispute.",
+          "time": "14:02"
+        },
+        {
+          "sender": "user",
+          "text": "It's a boundary dispute with my neighbor.",
+          "time": "14:05"
+        },
+        {
+          "sender": "consultant",
+          "text": "...",
+          "time": "14:08"
+        },
+        {
+          "sender": "user",
+          "text": "Are you there?",
+          "time": "14:12"
+        },
+        {
+          "sender": "user",
+          "text": "I'm ending the session as there is no response.",
+          "time": "14:15"
+        }
+      ],
+      "startTimeFormatted": "14:00 IST",
+      "endTimeFormatted": "14:15 IST",
+      "timezone": "IST"
+    },
+    {
+      "id": "SES-001156",
+      "sessionTime": "11:00 - 11:20",
+      "duration": "20 minutes",
+      "userName": "Suresh Kumar",
+      "consultantName": "CA Meena Iyer",
+      "messages": [
+        {
+          "sender": "user",
+          "text": "Hi Meena, I need help with GST filing.",
+          "time": "11:00"
+        },
+        {
+          "sender": "consultant",
+          "text": "Yes Suresh, let's look at your invoices.",
+          "time": "11:05"
+        },
+        {
+          "sender": "user",
+          "text": "The audio is very scratchy. Can you hear me?",
+          "time": "11:10"
+        },
+        {
+          "sender": "consultant",
+          "text": "I can hear you, but your voice is breaking.",
+          "time": "11:15"
+        },
+        {
+          "sender": "user",
+          "text": "I can't understand the advice. Ending call.",
+          "time": "11:20"
+        }
+      ],
+      "startTimeFormatted": "11:00 IST",
+      "endTimeFormatted": "11:20 IST",
+      "timezone": "IST"
+    },
+    {
+      "id": "SES-001098",
+      "sessionTime": "10:00 - 10:45",
+      "duration": "45 minutes",
+      "userName": "Deepika Reddy",
+      "consultantName": "Pandit Ramesh",
+      "messages": [
+        {
+          "sender": "user",
+          "text": "Pranam Pandit ji.",
+          "time": "10:00"
+        },
+        {
+          "sender": "consultant",
+          "text": "Kalyanam bhavatu. How can I help today?",
+          "time": "10:02"
+        },
+        {
+          "sender": "user",
+          "text": "I was charged twice for this recharge.",
+          "time": "10:05"
+        },
+        {
+          "sender": "consultant",
+          "text": "I see. Let's proceed with the reading while support checks this.",
+          "time": "10:10"
+        }
+      ],
+      "startTimeFormatted": "10:00 IST",
+      "endTimeFormatted": "10:45 IST",
+      "timezone": "IST"
+    },
+    {
+      "id": "SES-001045",
+      "sessionTime": "14:10 - 14:40",
+      "duration": "30 minutes",
+      "userName": "Ajay Malhotra",
+      "consultantName": "Dr. Sunita Roy",
+      "messages": [
+        {
+          "sender": "user",
+          "text": "Hi Dr. Sunita, I'm feeling stressed.",
+          "time": "14:10"
+        },
+        {
+          "sender": "consultant",
+          "text": "Hello Ajay, let's discuss what's on your mind.",
+          "time": "14:15"
+        },
+        {
+          "sender": "user",
+          "text": "Thank you, that was helpful.",
+          "time": "14:40"
+        },
+        {
+          "sender": "user",
+          "text": "User requested refund after session • 14:45",
+          "time": "14:45",
+          "color": "system"
+        }
+      ],
+      "startTimeFormatted": "14:10 IST",
+      "endTimeFormatted": "14:40 IST",
+      "timezone": "IST"
+    }
+  ]
+}

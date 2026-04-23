@@ -1,0 +1,97 @@
+# TekConsult Project - Knowledge Transfer (KT) Document
+
+## 1. Project Overview
+TekConsult is a digital consultation marketplace connecting users with professional consultants across various categories. Users can search for experts, book sessions, and engage via real-time chat or voice calls.
+
+## 2. Technology Stack
+
+### Backend
+- **Framework**: .NET 10.0 Web API
+- **Database**: SQL Server with Entity Framework Core (EF Core)
+- **Real-time Communication**: SignalR (Chat, Notifications, Session Control)
+- **Authentication**: JWT (JSON Web Tokens) with OTP-based login (Email/Phone)
+- **Architecture**: Service-Oriented Architecture (Controller -> Service -> Repository/Context)
+
+### Frontend
+- **Framework**: React 18+ with Vite
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS + Shadcn UI
+- **Portals**:
+  - **Admin Panel (`/Frontend`)**: For administration, consultant approval, and system management.
+  - **User & Consultant Portal (`/TekConsult-user`)**: For end-users to book sessions and consultants to manage their dashboard.
+- **Icons**: Lucide React
+- **State Management**: React Context API
+- **Real-time**: @microsoft/signalr (SignalR Client)
+
+---
+
+## 3. Project Structure
+
+### Backend (`/Backend/TekConsult`)
+| Directory | Purpose |
+|-----------|---------|
+| `Controllers/` | API Endpoints (e.g., `AccountController`, `SessionController`) |
+| `Services/` | Business logic implementation |
+| `Entities/` | Database models / EF Core entities |
+| `Dto/` | Data Transfer Objects for API requests/responses |
+| `Hubs/` | SignalR Hubs (e.g., `ChatHub`) |
+| `Migrations/` | Database schema versioning |
+
+### Frontend - Admin Panel (`/Frontend`)
+| Directory | Purpose |
+|-----------|---------|
+| `src/pages/` | Management views (Consultant approvals, Category management, etc.) |
+| `src/components/` | Reusable admin-specific UI pieces |
+| `src/services/` | API interaction logic for administrative tasks |
+
+### Frontend - User & Consultant Portal (`/TekConsult-user`)
+| Directory | Purpose |
+|-----------|---------|
+| `src/pages/` | Main view components grouped by role (User/Consultant/Auth) |
+| `src/components/` | Reusable UI components (Common, Layout, UI) |
+| `src/contexts/` | Global state (Authentication, Wallet, User details) |
+| `src/services/` | API abstraction layer using `fetch` |
+| `src/constants/` | API endpoints and config constants |
+
+---
+
+## 4. Key Modules & Workflows
+
+### 4.1. Authentication Flow
+1. **Signup/Login**: OTP sent to Email/Phone.
+2. **Verification**: OTP verified via `authAPI.verifyOTP`.
+3. **Session**: JWT stored in `localStorage` under `token`. User details stored in `authState`.
+
+### 4.2. Consultation Sessions
+- **Request**: User sends a request to a Consultant.
+- **Handling**: SignalR pushes "NewSessionRequest" to the Consultant Dashboard.
+- **State Machine**: Pending -> Active -> Ended (Controlled by `SessionState` enum).
+
+### 4.3. Profile & Verification
+- **Consultants**: Must complete profile (Bio, Category, Experience, Address).
+- **KYC**: Separate module handles document uploads (`kycAPI`).
+- **Approval**: Admin must verify consultants before they can go online.
+
+---
+
+## 5. Environment Setup
+
+### Backend Setup
+1. Open `Backend/TekConsult.sln` in Visual Studio or VS Code.
+2. Update `appsettings.json` with your SQL Server connection string.
+3. Run migrations: `dotnet ef database update`.
+4. Run project: `dotnet run`.
+
+### Frontend Setup
+1. Navigate to `/TekConsult-user`.
+2. Install dependencies: `npm install`.
+3. Configure `.env`: Set `VITE_API_BASE_URL` to your backend URL.
+4. Run dev server: `npm run dev`.
+
+---
+
+## 6. Recent Enhancements
+- **Address Management**: Consultants can now manage their full address details.
+- **Profile Completion**: A dynamic progress widget tracks profile completeness.
+- **Robust Verification**: Integrated `isConsultantVerified` check throughout the dashboard.
+- **Global Refresh**: `refreshProfile` method added to AuthContext to sync state across pages.

@@ -1,0 +1,198 @@
+// ============================================================================
+// CORRECTED ChatHub.cs - Complete Reference Implementation
+// ============================================================================
+// This file shows the complete ChatHub with best practices
+// The actual ChatHub.cs is already correct - this is for reference only
+// ============================================================================
+
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using TekConsult.Data;
+using TekConsult.Services;
+using TekConsult.Enums;
+
+
+namespace TekConsult.Hubs
+{
+    [Authorize] // ✅ JWT authentication required
+    public class ChatHub : Hub
+    {
+        private readonly IChatService _chatService;
+        private readonly AppDbContext _dbContext;
+
+        public ChatHub(IChatService chatService, AppDbContext dbContext)
+        {
+            _chatService = chatService;
+            _dbContext = dbContext;
+        }
+
+        // ================================
+        // Join consultation session room
+        // ================================
+        public async Task JoinSession(Guid sessionId)
+        {
+            var userIdStr = Context.User?.FindFirstValue(ClaimTypes.NameIdentifier);
+            var role = Context.User?.FindFirstValue(ClaimTypes.Role);
+
+            if (string.IsNullOrEmpty(userIdStr))
+                throw new HubException("Unauthorized");
+
+            var userId = Guid.Parse(userIdStr);
+
+            // ✅ Verify session exists
+            var sessionExists = await _dbContext.ConsultationSessions
+                .AnyAsync(x => x.SessionId == sessionId);
+
+            if (!sessionExists)
+                throw new HubException("Session not found");
+
+            // ✅ Verify user is participant (unless admin)
+            if (role != "Admin")
+            {
+                var isMember = await _dbContext.SessionParticipants
+                    .AnyAsync(x => x.SessionId == sessionId && x.UserId == userId);
+
+                if (!isMember)
+                    throw new HubException("You are not part of this session");
+            }
+
+            // ✅ Add to SignalR group (CRITICAL for broadcasts to work)
+            await Groups.AddToGroupAsync(Context.ConnectionId, sessionId.ToString());
+
+            // ✅ Auto-start session if needed (State 0 → 1)
+            await _chatService.MarkSessionLiveIfNeeded(sessionId);
+
+            // 📝 Optional: Log for debugging
+            Console.WriteLine($"[SignalR] User {userId} ({role}) joined session {sessionId}");
+        }
+
+        // ================================
+        // Send message
+        // ================================
+        public async Task SendMessage(Guid sessionId, string message)
+        {
+            var userIdStr = Context.User?.FindFirstValue(ClaimTypes.NameIdentifier);
+            var role = Context.User?.FindFirstValue(ClaimTypes.Role);
+
+            if (string.IsNullOrEmpty(userIdStr))
+                throw new HubException("Unauthorized");
+
+            var senderId = Guid.Parse(userIdStr);
+
+            // ✅ Verify session is active
+            var session = await _dbContext.ConsultationSessions
+                .FirstOrDefaultAsync(x => x.SessionId == sessionId);
+
+            if (session == null)
+                throw new HubException("Session not found");
+
+            if (session.State != SessionState.Active)
+                throw new HubException("Session not active");
+
+            // ✅ Check session hasn't expired
+            if (session.MaxAllowedEndTime.HasValue && DateTime.UtcNow > session.MaxAllowedEndTime.Value)
+                throw new HubException("Session expired. Please recharge.");
+
+            // ✅ Verify user is participant (unless admin)
+            if (role != "Admin")
+            {
+                var isMember = await _dbContext.SessionParticipants
+                    .AnyAsync(x => x.SessionId == sessionId && x.UserId == senderId);
+
+                if (!isMember)
+                    throw new HubException("You are not part of this session");
+            }
+
+            // ✅ Save to database AND broadcast via SignalR
+            // ChatService handles both operations
+            await _chatService.SaveAndBroadcastAsync(sessionId, senderId, message);
+
+            // 📝 Optional: Log for debugging
+            Console.WriteLine($"[SignalR] User {senderId} sent message to session {sessionId}");
+        }
+
+        // ================================
+        // Optional: Handle disconnections
+        // ================================
+        public override async Task OnDisconnectedAsync(Exception? exception)
+        {
+            var userIdStr = Context.User?.FindFirstValue(ClaimTypes.NameIdentifier);
+            
+            if (!string.IsNullOrEmpty(userIdStr))
+            {
+                Console.WriteLine($"[SignalR] User {userIdStr} disconnected");
+            }
+
+            await base.OnDisconnectedAsync(exception);
+        }
+    }
+}
+
+// ============================================================================
+// KEY POINTS FOR ChatHub
+// ============================================================================
+// 
+// 1. ✅ Hub methods are REQUEST HANDLERS, not broadcasters
+//    - They receive calls from frontend
+//    - They delegate to services for business logic
+//    - Services use IHubContext to broadcast
+//
+// 2. ✅ Group management is CRITICAL
+//    - Groups.AddToGroupAsync(connectionId, groupName)
+//    - groupName MUST match what's used in broadcasts
+//    - Use sessionId.ToString() consistently
+//
+// 3. ✅ Authentication via JWT
+//    - [Authorize] attribute on class
+//    - Context.User contains claims
+//    - ClaimTypes.NameIdentifier = userId
+//
+// 4. ✅ Error handling
+//    - throw new HubException("message") for client errors
+//    - Frontend receives error in .catch() block
+//
+// 5. ✅ ChatHub does NOT broadcast directly
+//    - ChatService has IHubContext<ChatHub>
+//    - ChatService.BroadcastMessageAsync() does the actual broadcast
+//    - This allows other services to broadcast too
+//
+// ============================================================================
+// FRONTEND USAGE EXAMPLE
+// ============================================================================
+//
+// const connection = new HubConnectionBuilder()
+//     .withUrl("/chatHub", {
+//         accessTokenFactory: () => localStorage.getItem("token")
+//     })
+//     .build();
+//
+// // Connect
+// await connection.start();
+//
+// // Join session group
+// await connection.invoke("JoinSession", sessionId);
+//
+// // Listen for messages
+// connection.on("ReceiveMessage", (data) => {
+//     console.log(`${data.SenderName}: ${data.Content}`);
+// });
+//
+// // Listen for session events
+// connection.on("SessionAccepted", (data) => {
+//     console.log("Session accepted!", data);
+// });
+//
+// connection.on("SessionStarted", (data) => {
+//     console.log("Session started!", data);
+// });
+//
+// connection.on("SessionEnded", (data) => {
+//     console.log("Session ended!", data);
+// });
+//
+// // Send message
+// await connection.invoke("SendMessage", sessionId, "Hello!");
+//
+// ============================================================================
